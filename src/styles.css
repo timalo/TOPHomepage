@@ -1,0 +1,99 @@
+* {
+  color: black;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  padding: 30px;
+  min-height: 30vh;
+  max-height: 90vh;
+  background: linear-gradient(-10deg, white 0 49.8%, #5592b4 50% 100%);
+}
+
+.mainSection {
+  padding: 30px;
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: white;
+}
+
+.imgDiv {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: #faddca;
+  /* margin: 50px 0 50px 50px; */
+  object-fit: cover;
+  min-width: 40%;
+  max-width: 40%;
+  aspect-ratio: 1/1;
+}
+
+.imgDiv > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.profileName {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  color: black;
+  font-size: 4em;
+  right: 2%;
+}
+
+.introDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin: 50px 50px 50px 0;
+}
+
+.introText {
+  color: black;
+  font-size: 1.8em;
+  padding: 2%;
+}
+
+.introHeader {
+  padding: 2%;
+  margin: 0;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  /* margin: 50px 0 50px 50px; */
+  border: solid 1px blue;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.cardImage {
+  max-height: 65%;
+  min-height: 65%;
+  object-fit: stretch;
+}
+
+.cardInfoDiv {
+  background-color: red;
+  height: 100%;
+}
