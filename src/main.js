@@ -36,3 +36,15 @@ grgrgrImg.src = grgrgr;
 const cardDiv4 = document.getElementsByClassName("card")[3];
 cardDiv4.insertBefore(grgrgrImg, cardDiv4.firstChild);
 grgrgrImg.classList.add("cardImage");
+
+const cardDiv5 = document.getElementsByClassName("card")[4];
+const profilePicture2 = new Image();
+profilePicture2.src = gunAme;
+cardDiv5.insertBefore(profilePicture2, cardDiv5.firstChild);
+profilePicture2.classList.add("cardImage");
+
+const cardDiv6 = document.getElementsByClassName("card")[5];
+const gunAmeImg2 = new Image();
+gunAmeImg2.src = grgrgr;
+gunAmeImg2.classList.add("cardImage");
+cardDiv6.insertBefore(gunAmeImg2, cardDiv6.firstChild);
