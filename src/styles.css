@@ -32,6 +32,7 @@ body {
   align-items: center;
   background-color: #333;
   color: white;
+  font-size: 1.3em;
 }
 
 .imgDiv {
@@ -105,7 +106,7 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .card {
     --card-amount: 1;
     /* font-size: 1em; */
@@ -124,7 +125,6 @@ body {
   margin: 20px;
   width: calc((90% / (var(--card-amount))) - 30px);
   transition: transform 0.5s;
-  max-height: 800px;
 }
 
 .card:hover {
@@ -160,6 +160,7 @@ body {
 }
 
 .cardDesc {
+  color: gray;
   font-size: 1.5em;
   padding: 3%;
   margin: 0;
@@ -193,6 +194,11 @@ body {
   object-fit: cover;
 }
 
+.contactHeader {
+  font-size: 2em;
+  margin: 0;
+}
+
 .contactText {
   font-size: 1.2em;
 }
@@ -203,7 +209,7 @@ body {
 
 .icon {
   max-height: 52px;
-  padding: 8px;
+  margin: 8px;
   transition: transform 0.5s;
 }
 
@@ -215,4 +221,27 @@ body {
 
 .contactContent * {
   color: white;
+}
+
+.contactContent {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bottomIcon {
+  filter: invert(1); /* turn black svg into white */
+  max-height: 32px;
+  max-width: 32px;
+  margin: 8px;
+  transition: transform 0.5s;
+}
+
+.phoneNumDiv,
+.emailDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
