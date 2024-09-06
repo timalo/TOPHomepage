@@ -1,4 +1,7 @@
-/* import profilePictureFile from "./images/AmeJump.png";
+/*
+Just gonna keep all of this here in case it might be needed.
+
+import profilePictureFile from "./images/AmeJump.png";
 import gunAme from "./images/ameGun.png";
 import ameHehe from "./images/ameHehe.jpeg";
 import wizardPfp from "./images/Wizardpfp.png";

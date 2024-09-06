@@ -235,7 +235,7 @@ a {
   filter: invert(1); /* turn black svg into white */
   max-height: 32px;
   max-width: 32px;
-  margin: 8px;
+  margin: 12px;
   transition: transform 0.5s;
 }
 
@@ -244,4 +244,25 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.cardInfoTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cardIcons {
+  display: flex;
+}
+
+.cardIcons > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardIcon {
+  width: 70%;
+  height: 70%;
 }
