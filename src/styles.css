@@ -13,21 +13,12 @@ body {
   flex-direction: row;
   align-items: center;
   color: white;
-  padding: 30px;
+  padding: 3%;
   background: linear-gradient(-10deg, white 0 49.8%, #5592b4 50% 100%);
 }
 
 .mainSection {
   padding: 30px;
-}
-
-.bottomSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #333;
-  color: white;
-  font-size: 1.3em;
 }
 
 .imgDiv {
@@ -62,7 +53,6 @@ body {
   flex-direction: column;
   background-color: white;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  margin: 50px 50px 50px 0;
 }
 
 .introText {
@@ -97,6 +87,21 @@ body {
     width: 64px;
     height: 64px;
   }
+  .cardImage {
+    min-height: 60%;
+  }
+  .bottomSection {
+    display: flex;
+    flex-direction: row;
+    background-color: #5592b4;
+    color: white;
+    min-height: 70vh;
+    max-height: 90vh;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.89);
+  }
+  .contactContent {
+    font-size: 1.5em;
+  }
 }
 
 /* Tablet Layout */
@@ -111,26 +116,43 @@ body {
     width: 48px;
     height: 48px;
   }
+  .cardImage {
+    min-height: 60%;
+  }
 }
 
 /* Mobile Layout */
 @media (max-width: 700px) {
   .card {
     --card-amount: 1;
-    /* font-size: 1em; */
+    min-height: 600px;
   }
   .cardTitle {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   .cardIcon {
     width: 32px;
     height: 32px;
+  }
+  .cardDesc {
+    min-height: 40%;
+  }
+  .cardContainer {
+    margin: 20px;
   }
   .topSection {
     flex-direction: column;
     padding: 10px;
     background: linear-gradient(-20deg, white 0 70.8%, #5592b4 50% 100%);
   }
+  .mainHeader {
+    text-align: center;
+  }
+
+  .cardImage {
+    min-height: 450px; /* This shouldn't be done but oh well */
+  }
+
   .imgDiv {
     max-width: 80%;
     min-width: 320px;
@@ -160,7 +182,60 @@ body {
     color: gray;
     font-size: 2.5em;
   }
+
+  .iconsDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainSection {
+    padding: 10px;
+  }
+
+  .mainHeader {
+    font-size: 4em;
+  }
+
+  .bottomSection {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    background-color: #5592b4;
+  }
+
+  .contactImage > picture {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contactImage {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .bottomImage {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .contactHeader {
+    text-align: center;
+  }
+  .bottomIconDiv {
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
+/* Mobile layout end */
 
 .card {
   position: relative;
@@ -181,7 +256,6 @@ body {
 }
 
 .cardImage {
-  min-height: 60%;
   object-fit: cover;
   border: solid 3px gray;
 }
@@ -190,20 +264,11 @@ body {
   height: 100%;
 }
 
-.bottomSection {
-  display: flex;
-  flex-direction: row;
-  background-color: #5592b4;
-  color: white;
-  min-height: 70vh;
-  max-height: 90vh;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.89);
-}
-
 .cardTitle {
   font-weight: bold;
   padding: 3%;
   margin: 0;
+  flex-grow: 6;
 }
 
 .cardDesc {
@@ -216,11 +281,6 @@ body {
 .cardDesc > p {
   color: #888;
   margin: 0;
-}
-
-.bottomSection {
-  display: flex;
-  flex-direction: row;
 }
 
 .contactContent {
@@ -236,7 +296,7 @@ body {
 }
 
 .bottomImage {
-  max-width: calc(80% - 32px);
+  max-width: calc(100% - 32px);
   max-height: 90%;
   object-fit: cover;
 }
@@ -301,10 +361,22 @@ a {
 
 .cardIcons {
   display: flex;
+  min-width: 40%;
+  justify-content: flex-end;
 }
 
 .cardIcons > a {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.cardIcon {
+  width: 100%;
+}
+
+.bottomIconDiv > a {
+  max-height: 52px;
+  max-width: 52px;
+  margin: 8px;
 }

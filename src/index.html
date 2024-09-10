@@ -162,7 +162,8 @@
         <div class="card">
           <img
             src="./images/ameGun.png"
-            alt="Another Ame with a gun"
+            A
+            alt="Anotherme with a gun"
             class="cardImage"
           />
           <div class="cardInfoDiv">
@@ -264,11 +265,13 @@
         </div>
       </div>
       <div class="contactImage">
-        <img
-          src="./images/smolAme3DWide.jpeg"
-          alt="Wide 3D model of Ame"
-          class="bottomImage"
-        />
+        <picture>
+          <source
+            media="(min-width: 700px)"
+            srcset="./images/smolAme3DWide.jpeg"
+          />
+          <img src="./images/amePortrait.jpg" alt="" class="bottomImage" />
+        </picture>
       </div>
     </div>
   </body>
