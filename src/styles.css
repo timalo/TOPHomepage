@@ -105,7 +105,37 @@ body {
 }
 
 /* Tablet Layout */
-@media (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
+  .topSection {
+    display: block;
+  }
+  .profileName {
+    position: absolute;
+    top: 0;
+    transform: translateX(85%);
+    color: white;
+    text-shadow: 0 0 4px black;
+    font-size: 4em;
+  }
+
+  .imgDiv {
+    position: relative;
+    float: left;
+    float: top;
+    margin: 10px;
+  }
+
+  .introHeader {
+    text-align: center;
+  }
+
+  .introDiv {
+    width: 90vw;
+    text-align: left;
+    display: block;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
   .card {
     --card-amount: 2;
   }
@@ -118,6 +148,14 @@ body {
   }
   .cardImage {
     min-height: 60%;
+  }
+  .bottomSection {
+    display: flex;
+    flex-direction: row;
+    background-color: #5592b4;
+  }
+  .contactImage {
+    padding: 3%;
   }
 }
 
